@@ -1,0 +1,36 @@
+﻿@model Crud.Asp.Net.Models.ViewsModels.TablaViewsModels
+@{
+    ViewBag.Title = "DetallePersona";
+}
+
+<h2>Detalle De La Persona</h2>
+
+<div class="form-group">
+    <label>Id Persona</label>
+    @Model.Id_person
+</div>
+<div class="form-group">
+    <label>Nombre</label>
+    @Model.Nombre
+</div>
+<div class="form-group">
+    <label>Apellido</label>
+    @Model.Apellido
+</div>
+<div class="form-group">
+    <label>Edad</label>
+    @Model.Edad
+</div>
+<div class="form-group">
+    <label>Sexo</label>
+    @Model.Sexo
+</div>
+<div class="form-group">
+    <label>Correo</label>
+    @Model.Correo
+</div>
+
+<div class="form-group">
+    <a href="@Url.Action("Index","Peoples")">Regresar</a>
+</div>
+

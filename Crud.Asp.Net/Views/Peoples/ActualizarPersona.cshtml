@@ -1,0 +1,54 @@
+﻿@model Crud.Asp.Net.Models.ViewsModels.TablaViewsModels
+@{
+    ViewBag.Title = "ActualizarPersona";
+}
+
+<h2>Actualizar</h2>
+
+ 
+<hr />
+
+
+<form method="post" action="@Url.Action("ActualizarPersona","Peoples")">
+
+    <div class="form-group">
+        <label>Id Persona</label>
+        <br />
+        @Html.TextBoxFor(x => x.Id_person, new { @class = "form-Control", @readonly = "readonly" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.Nombre)
+        <br />
+        @Html.TextBoxFor(x => x.Nombre, new { @class = "form-Control" })
+        @Html.ValidationMessageFor(x => x.Nombre, null, new { @class = "alert" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Apellido)
+        <br />
+        @Html.TextBoxFor(x => x.Apellido, new { @class = "form-Control" })
+        @Html.ValidationMessageFor(x => x.Apellido, null, new { @class = "alert" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Edad)
+        <br />
+        @Html.TextBoxFor(x => x.Edad, new { @class = "form-Control" })
+        @Html.ValidationMessageFor(x => x.Edad, null, new { @class = "alert" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Sexo)
+        <br />
+        @Html.TextBoxFor(x => x.Sexo, new { @class = "form-Control" })
+        @Html.ValidationMessageFor(x => x.Sexo, null, new { @class = "alert" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.Correo)
+        <br />
+        @Html.TextBoxFor(x => x.Correo, new { @class = "form-Control" })
+        @Html.ValidationMessageFor(x => x.Correo, null, new { @class = "alert" })
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-info" value="Guardar" />
+        <a href="@Url.Action("Index","Peoples")">Regresar</a>
+    </div>
+</form>

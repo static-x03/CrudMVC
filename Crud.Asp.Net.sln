@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crud.Asp.Net", "Crud.Asp.Net\Crud.Asp.Net.csproj", "{93020A3E-4EEB-4892-A3FF-47747FD348C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{33F10448-5F76-4717-B66C-835D2DD205C6}"
+	ProjectSection(SolutionItems) = preProject
+		DataBase.sql = DataBase.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93020A3E-4EEB-4892-A3FF-47747FD348C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93020A3E-4EEB-4892-A3FF-47747FD348C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93020A3E-4EEB-4892-A3FF-47747FD348C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93020A3E-4EEB-4892-A3FF-47747FD348C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DB49E41-950B-49F5-9976-6B04A901C312}
+	EndGlobalSection
+EndGlobal

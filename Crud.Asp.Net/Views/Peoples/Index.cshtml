@@ -1,0 +1,40 @@
+﻿@model List<Crud.Asp.Net.Models.ViewsModels.ListTablaWievsModels>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>LISTADO DE PERSONAS</h2>
+<a href="@Url.Action("NuevoRegistro","Peoples")" class="btn btn-primary right">Nuevo</a>
+<a href="@Url.Action("DescargarCsv","Peoples")" class="btn btn-success left">Exportar</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            @*<td>ID Persona</td>*@
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Edad</td>
+            <td>Sexo</td>
+            @*<td>Correo</td>*@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Persona in Model)
+        {
+            <tr>
+                @*<td>@Persona.Id_person</td>*@
+                <td>@Persona.Nombre</td>
+                <td>@Persona.Apellido</td>
+                <td>@Persona.Edad</td>
+                <td>@Persona.Sexo</td>
+                @*<td>@Persona.Correo</td>*@
+                <td>
+                    <a href="@Url.Action("ActualizarPersona","Peoples", new {id=Persona.Id_person})" class="btn btn-success right">Actualizar</a>
+                    <a href="@Url.Action("BorrarPersona","Peoples", new {id=Persona.Id_person})" class="btn btn-danger right">Eliminar</a>
+                    <a href="@Url.Action("DetallePersona","Peoples", new {id=Persona.Id_person})" class="btn btn-default right">Ver Detalle</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
